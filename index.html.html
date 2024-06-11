@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <header> 
+        <img src="logo.jpg" alt="Logo" class="header-logo" length="300" width="300">
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <div class="container">                                  
+            <h1>DoubleJ Dojo</h1>                                     
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#home">Home</a></li>  
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Karate Dojo</h2>
+            <p>We offer modern/traditional karate training for all ages and skill levels.</p>
+        </div>
+    </section>
+
+    <section id="video-slider" class="video-slider">
+        <div class="container">
+            <h2>Know about us</h2>
+            <div class="slider-container">
+                <div class="video-slide">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xbo3-wxpr1M?si=p_FoWfVszItWIJjd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-slide">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cqxKfAqo9ys?si=XMjsCbnxLKXC6jZ0" title="Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- Add more video slides as needed -->
+            </div>
+            <button class="prev-btn" onclick="prevSlide()">Previous</button>
+            <button class="next-btn" onclick="nextSlide()">Next</button>
+        </div>
+    </section>    
+
+<div class="image-slider">
+    <img src="1.jpg" alt="Slide 1">
+    <img src="2.jpg" alt="Slide 2">
+    <img src="3.jpg" alt="Slide 3">
+    <img src="4.jpg" alt="Slide 4">
+</div>
+
+        <section id="history" class="history">
+            <div class="container">
+                <h2>Karate History</h2>
+                <p>Karate has a rich and fascinating history that dates back centuries. Here's a brief overview:</p>
+                <p>Karate originated in Okinawa, Japan, as a form of self-defense developed by the Ryukyu Kingdom. It was influenced by Chinese martial arts and indigenous Okinawan fighting styles.</p>
+                <p>During the early 20th century, karate began to spread beyond Okinawa to mainland Japan and eventually internationally, thanks to practitioners like Gichin Funakoshi, who is often credited with popularizing karate on the Japanese mainland.</p>
+                <p>Today, karate is practiced worldwide and is known for its emphasis on discipline, respect, and self-improvement. It has evolved into various styles and schools, each with its unique techniques and philosophies.</p>
+                <p>At DoubleJ Dojo, we honor the traditions and teachings of karate while also embracing modern training methods to help our students become skilled martial artists and well-rounded individuals.</p>
+
+                <img src="ry.jpg" alt="Karate history" class="history-img">
+           
+            </div>
+        </section>
+
+        <section id="history" class="history" style="float: left; width: 50%;">
+    <div class="container">
+        <!-- History content here -->
+    </div>
+</section>
+
+<section id="achievements" class="achievements">
+    <div class="container">
+        <h2>Karate Achievements</h2>
+        <div class="achievement-item">
+            <img src="kid.jpg" alt="Tournament Win">
+            <h3>Tournament Wins</h3>
+            <p>Highlight your dojo's success in various karate tournaments, including photos of winning teams or individuals.</p>
+        </div>
+        <div class="achievement-item">
+            <img src="promo.jpg" alt="Belt Promotion">
+            <h3>Belt Promotions</h3>
+            <p>Celebrate the achievements of students who have earned higher belt ranks through their dedication and hard work.</p>
+        </div>
+        <!-- Add more achievement items as needed -->
+    </div>
+</section>
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our dojo has been teaching karate for over 20 years. We focus on discipline, respect, and self-improvement.</p>
+            <p>Our experienced instructors are dedicated to helping students reach their full potential.</p>
+            <p>Meet our instructors:</p>
+            <ul>
+                <li>Sensei John Doe - 5th Dan Black Belt</li>
+                <li>Sensei Jane Smith - 4th Dan Black Belt</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="classes" class="classes">
+        <div class="container">
+            <h2>Classes</h2>
+            <p>We offer a variety of classes suitable for all ages and skill levels:</p>
+            <ul>
+                <li>Beginner Karate - Perfect for those new to martial arts</li>
+                <li>Advanced Karate - For experienced practitioners seeking to refine their skills</li>
+                <li>Kids Karate - Fun and engaging classes tailored for children</li>
+                <li>Self-Defense - Learn practical techniques to defend yourself in real-life situations</li>
+            </ul>
+            <p>View our class schedule for more details.</p>
+        </div>
+    </section>
+
+
+    <section id="testimonial" class="testimonial">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="slider">
+                <div class="testimonial-item active">
+                    <blockquote>"I've been training at DoubleJ Dojo for two years now, and it's been an incredible journey. The instructors are knowledgeable, and the environment is welcoming. I highly recommend it!"</blockquote>
+                    <cite>- John Smith</cite>
+                    <img src="5.jpg" alt="John Smith" class="testimonial-img">
+                </div>
+                <div class="testimonial-item">
+                    <blockquote>"DoubleJ Dojo helped me improve my karate skills significantly. The classes are well-structured, and the instructors are dedicated to our growth. I'm grateful to be a part of this community."</blockquote>
+                    <cite>- Emily Jones</cite>
+                    <img src="6.jpg" alt="Emily Jones" class="testimonial-img">
+                </div>
+                <!-- Add more testimonial items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="registration" class="registration">
+        <div class="container">
+            <h2><i class="fas fa-user-plus"></i>Registration</h2>
+            <p>Ready to join us? Fill out the form below:</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <p>Got questions? We have answers!</p>
+            <div class="faq-item">
+                <h3>What should I wear to class?</h3>
+                <p>We recommend wearing comfortable clothing that allows for easy movement, such as a t-shirt and sweatpants. Additionally, please remove any jewelry and tie back long hair.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do I need any prior experience to join?</h3>
+                <p>No prior experience is necessary! Our classes are suitable for beginners and experienced practitioners alike. Our instructors will guide you through the training process at your own pace.</p>
+            </div>
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to sign up for a class, please contact us:</p>
+            <ul>
+                <li>Email: doubelJ@karatedo.com</li>
+                <li>Phone: 09261160202</li>
+                <li>Address: (branch) 123 Bokawkan Street,Baguio City, Philippines</li>
+            </ul>
+            <p>Follow us on social media for updates and events:</p>
+
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/yourPage"><img src="fb.png" length="30" width="30"></a></li>
+                <li><a href="https://www.twitter.com/yourPage"><img src="twitter.png" length="30" width="30"></a></li>
+                <li><a href="https://www.instagram.com/yourPage"><img src="instagram.jpg" length="30" width="30"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        // Your JavaScript code goes here
+        const image =['1.jpg', '2.jpg', '3.jpg', '4.jpg'];
+        let index = 0;
+
+        function changeBackground() {
+            document.querySelector('.hero').style.backgroundImage = `url(${images[index]})`;
+            index = (index + 1) % image.length;
+        }
+
+        setInterval(changeBackground, 5000); // Change every 5 seconds
+    </script>
+
+    <script>
+        const images = document.querySelectorAll('.image-slider img');
+        let currentIndex = 0;
+
+        function changeSlide() {
+            // Hide all images
+            images.forEach(img => {
+                img.style.display = 'none';
+            });
+
+            // Show the current image
+            images[index].style.display = 'block';
+
+            // Move to the next image
+            index = (index + 1) % images.length;
+        }
+
+        //call the changeSlide function initially
+        changeSlide();
+        
+        //Set interval changeSlide function initially
+        setInterval(changeSlide, 5000);
+    </script>
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+            
+    </script>
+
+    <script>
+        let slideIndex = 0;
+    
+        function showSlides() {
+            const slides = document.querySelectorAll('.video-slide');
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+            slides[slideIndex].style.display = 'block';
+        }
+    
+        function nextSlide() {
+            const slides = document.querySelectorAll('.video-slide');
+            if (slideIndex === slides.length - 1) {
+                slideIndex = 0;
+            } else {
+                slideIndex++;
+            }
+            showSlides();
+        }
+    
+        function prevSlide() {
+            const slides = document.querySelectorAll('.video-slide');
+            if (slideIndex === 0) {
+                slideIndex = slides.length - 1;
+            } else {
+                slideIndex--; 
+            }
+            showSlides();
+        }
+    
+        showSlides(); // Show the initial slide
+    </script>
+    
+    <div class="parent clearfix">
+        <div class="float-left">Floateed Element</div>
+        <div class="float-right">Floated Element</div>
+    </div>
+
+</body>
+</html>
